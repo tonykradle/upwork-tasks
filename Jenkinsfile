@@ -21,8 +21,7 @@ def reviewYesOrNo = false
 def emailAddress 
 
 pipeline {
-
-    agent any
+    agent { label 'SC47-agent' }
     
 	parameters {
 		string (
